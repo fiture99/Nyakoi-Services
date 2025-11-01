@@ -101,7 +101,7 @@ const Header = () => {
                 onClick={() => scrollToSection('contact')}
                 className="btn-primary w-full mt-6"
               >
-                Start Project
+                Start Project 
               </button>
             </nav>
           </div>
