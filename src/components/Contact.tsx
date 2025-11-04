@@ -16,7 +16,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: 'Visit Our Office',
-      content: 'Westfield, Serrekunda',
+      content: 'Kunkujang',
       subtext: 'The Gambia',
       gradient: 'from-purple-500 to-pink-500',
       bgGradient: 'from-purple-500/10 to-pink-500/10'
@@ -40,7 +40,7 @@ const Contact = () => {
     {
       icon: Globe,
       title: 'Visit Online',
-      content: 'nyakoiservices.com',
+      content: 'nyakoi-services.onrender.com',
       subtext: 'Explore our services',
       gradient: 'from-orange-500 to-red-500',
       bgGradient: 'from-orange-500/10 to-red-500/10'
@@ -80,13 +80,13 @@ const Contact = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header Section */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-16">
           <div className="inline-flex items-center space-x-3 bg-white/80 backdrop-blur-sm border border-gray-200 px-6 py-3 rounded-2xl mb-8 group hover:bg-white hover:shadow-lg transition-all duration-500">
             <MessageCircle className="h-5 w-5 text-purple-600" />
             <span className="text-gray-700 font-semibold text-sm">Get In Touch</span>
             <Zap className="h-4 w-4 text-purple-600" />
           </div>
-          <h2 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
             Let's{' '}
             <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
               Connect
@@ -97,40 +97,40 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Contact Information */}
           <div className="space-y-8">
-            <div className="grid sm:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {contactInfo.map((info, index) => {
                 const IconComponent = info.icon;
                 return (
                   <div 
                     key={index} 
-                    className="group relative bg-white/80 backdrop-blur-lg border border-gray-200/50 rounded-3xl p-8 hover:bg-white hover:border-gray-300 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl animate-slide-up"
+                    className="group relative bg-white/80 backdrop-blur-lg border border-gray-200/50 rounded-3xl p-6 hover:bg-white hover:border-gray-300 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl animate-slide-up min-h-[180px] flex flex-col"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
                     {/* Hover Gradient */}
                     <div className={`absolute inset-0 bg-gradient-to-br ${info.bgGradient} rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10`}></div>
                     
-                    <div className="flex items-start space-x-6">
-                      <div className={`bg-gradient-to-br ${info.gradient} p-4 rounded-2xl shadow-lg group-hover:scale-110 transition-transform duration-500`}>
-                        <IconComponent className="h-6 w-6 text-white" />
+                    <div className="flex items-start space-x-4 flex-1">
+                      <div className={`bg-gradient-to-br ${info.gradient} p-3 rounded-2xl shadow-lg group-hover:scale-110 transition-transform duration-500 flex-shrink-0`}>
+                        <IconComponent className="h-5 w-5 text-white" />
                       </div>
-                      <div className="flex-1">
-                        <h3 className="font-bold text-gray-900 mb-3 text-lg group-hover:text-gray-800 transition-colors duration-300">
+                      <div className="flex-1 min-w-0">
+                        <h3 className="font-bold text-gray-900 mb-2 text-base group-hover:text-gray-800 transition-colors duration-300 leading-tight">
                           {info.title}
                         </h3>
-                        <p className="text-gray-800 font-semibold mb-2 text-base group-hover:text-gray-900 transition-colors duration-300">
+                        <p className="text-gray-800 font-semibold mb-1 text-sm group-hover:text-gray-900 transition-colors duration-300 break-words">
                           {info.content}
                         </p>
-                        <p className="text-sm text-gray-600 group-hover:text-gray-700 transition-colors duration-300">
+                        <p className="text-xs text-gray-600 group-hover:text-gray-700 transition-colors duration-300">
                           {info.subtext}
                         </p>
                       </div>
                     </div>
 
                     {/* Corner Accent */}
-                    <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                       <div className={`w-2 h-2 bg-gradient-to-br ${info.gradient} rounded-full`}></div>
                     </div>
                   </div>
@@ -139,27 +139,27 @@ const Contact = () => {
             </div>
 
             {/* Business Hours */}
-            <div className="bg-gradient-to-br from-purple-50 to-blue-50 border border-purple-200/50 rounded-3xl p-8 animate-slide-up shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1" style={{ animationDelay: '0.4s' }}>
-              <div className="flex items-center space-x-4 mb-6">
-                <div className="bg-gradient-to-br from-purple-500 to-blue-500 p-3 rounded-xl shadow-lg">
-                  <Clock className="h-6 w-6 text-white" />
+            <div className="bg-gradient-to-br from-purple-50 to-blue-50 border border-purple-200/50 rounded-3xl p-6 animate-slide-up shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1" style={{ animationDelay: '0.4s' }}>
+              <div className="flex items-center space-x-3 mb-4">
+                <div className="bg-gradient-to-br from-purple-500 to-blue-500 p-2 rounded-xl shadow-lg flex-shrink-0">
+                  <Clock className="h-5 w-5 text-white" />
                 </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-gray-900">Business Hours</h3>
-                  <p className="text-gray-600 text-sm">We're here when you need us</p>
+                <div className="min-w-0">
+                  <h3 className="text-xl font-bold text-gray-900 leading-tight">Business Hours</h3>
+                  <p className="text-gray-600 text-xs">We're here when you need us</p>
                 </div>
               </div>
-              <div className="space-y-4">
+              <div className="space-y-3">
                 {[
                   { day: 'Monday - Friday', time: '8:00 AM - 6:00 PM', color: 'text-purple-600' },
                   { day: 'Saturday', time: '9:00 AM - 4:00 PM', color: 'text-blue-600' },
                   { day: 'Sunday', time: 'Emergency Support Only', color: 'text-orange-600' }
                 ].map((schedule, index) => (
-                  <div key={index} className="flex justify-between items-center py-3 border-b border-purple-200/50 last:border-b-0 group">
-                    <span className="text-gray-800 font-medium group-hover:text-gray-900 transition-colors duration-300">
+                  <div key={index} className="flex justify-between items-center py-2 border-b border-purple-200/50 last:border-b-0 group">
+                    <span className="text-gray-800 font-medium text-sm group-hover:text-gray-900 transition-colors duration-300 leading-tight">
                       {schedule.day}
                     </span>
-                    <span className={`font-bold ${schedule.color} group-hover:scale-110 transition-transform duration-300`}>
+                    <span className={`font-bold text-sm ${schedule.color} group-hover:scale-105 transition-transform duration-300 text-right leading-tight pl-2`}>
                       {schedule.time}
                     </span>
                   </div>
@@ -169,39 +169,39 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-white/80 backdrop-blur-lg border border-gray-200/50 rounded-3xl p-10 animate-slide-up shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-1" style={{ animationDelay: '0.2s' }}>
+          <div className="bg-white/80 backdrop-blur-lg border border-gray-200/50 rounded-3xl p-6 md:p-8 animate-slide-up shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-1" style={{ animationDelay: '0.2s' }}>
             {isSubmitted ? (
-              <div className="text-center py-12">
-                <div className="bg-gradient-to-br from-green-500 to-emerald-500 p-4 rounded-2xl w-20 h-20 mx-auto mb-6 shadow-lg">
-                  <CheckCircle className="h-12 w-12 text-white" />
+              <div className="text-center py-8 md:py-12">
+                <div className="bg-gradient-to-br from-green-500 to-emerald-500 p-3 md:p-4 rounded-2xl w-16 h-16 md:w-20 md:h-20 mx-auto mb-4 md:mb-6 shadow-lg">
+                  <CheckCircle className="h-8 w-8 md:h-12 md:w-12 text-white" />
                 </div>
-                <h3 className="text-3xl font-bold text-gray-900 mb-4">Message Sent!</h3>
-                <p className="text-gray-600 text-lg mb-8">
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3 md:mb-4">Message Sent!</h3>
+                <p className="text-gray-600 text-base md:text-lg mb-6 md:mb-8">
                   Thank you for reaching out. We'll get back to you within 24 hours.
                 </p>
                 <button
                   onClick={() => setIsSubmitted(false)}
-                  className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-4 rounded-2xl font-semibold hover:from-purple-700 hover:to-blue-700 transition-all duration-300 transform hover:-translate-y-1 shadow-lg"
+                  className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-6 py-3 md:px-8 md:py-4 rounded-2xl font-semibold hover:from-purple-700 hover:to-blue-700 transition-all duration-300 transform hover:-translate-y-1 shadow-lg text-sm md:text-base"
                 >
                   Send Another Message
                 </button>
               </div>
             ) : (
               <>
-                <div className="flex items-center space-x-4 mb-8">
-                  <div className="bg-gradient-to-br from-purple-600 to-blue-600 p-3 rounded-2xl shadow-lg">
-                    <Send className="h-6 w-6 text-white" />
+                <div className="flex items-center space-x-3 md:space-x-4 mb-6 md:mb-8">
+                  <div className="bg-gradient-to-br from-purple-600 to-blue-600 p-2 md:p-3 rounded-2xl shadow-lg flex-shrink-0">
+                    <Send className="h-5 w-5 md:h-6 md:w-6 text-white" />
                   </div>
-                  <div>
-                    <h3 className="text-3xl font-bold text-gray-900">Send us a Message</h3>
-                    <p className="text-gray-600">We'd love to hear from you</p>
+                  <div className="min-w-0">
+                    <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Send us a Message</h3>
+                    <p className="text-gray-600 text-sm md:text-base">We'd love to hear from you</p>
                   </div>
                 </div>
 
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid sm:grid-cols-2 gap-6">
+                <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
                     <div className="group">
-                      <label className="block text-sm font-semibold text-gray-800 mb-3">
+                      <label className="block text-sm font-semibold text-gray-800 mb-2 md:mb-3">
                         First Name
                       </label>
                       <input
@@ -209,13 +209,13 @@ const Contact = () => {
                         name="firstName"
                         value={formData.firstName}
                         onChange={handleChange}
-                        className="w-full px-5 py-4 border-2 border-gray-200 rounded-2xl focus:ring-2 focus:ring-purple-500 focus:border-purple-300 transition-all duration-300 bg-white/50 backdrop-blur-sm shadow-sm hover:shadow-md focus:shadow-lg"
+                        className="w-full px-4 py-3 md:px-5 md:py-4 border-2 border-gray-200 rounded-2xl focus:ring-2 focus:ring-purple-500 focus:border-purple-300 transition-all duration-300 bg-white/50 backdrop-blur-sm shadow-sm hover:shadow-md focus:shadow-lg text-sm md:text-base"
                         placeholder="John"
                         required
                       />
                     </div>
                     <div className="group">
-                      <label className="block text-sm font-semibold text-gray-800 mb-3">
+                      <label className="block text-sm font-semibold text-gray-800 mb-2 md:mb-3">
                         Last Name
                       </label>
                       <input
@@ -223,7 +223,7 @@ const Contact = () => {
                         name="lastName"
                         value={formData.lastName}
                         onChange={handleChange}
-                        className="w-full px-5 py-4 border-2 border-gray-200 rounded-2xl focus:ring-2 focus:ring-purple-500 focus:border-purple-300 transition-all duration-300 bg-white/50 backdrop-blur-sm shadow-sm hover:shadow-md focus:shadow-lg"
+                        className="w-full px-4 py-3 md:px-5 md:py-4 border-2 border-gray-200 rounded-2xl focus:ring-2 focus:ring-purple-500 focus:border-purple-300 transition-all duration-300 bg-white/50 backdrop-blur-sm shadow-sm hover:shadow-md focus:shadow-lg text-sm md:text-base"
                         placeholder="Doe"
                         required
                       />
@@ -231,7 +231,7 @@ const Contact = () => {
                   </div>
                   
                   <div className="group">
-                    <label className="block text-sm font-semibold text-gray-800 mb-3">
+                    <label className="block text-sm font-semibold text-gray-800 mb-2 md:mb-3">
                       Email Address
                     </label>
                     <input
@@ -239,21 +239,21 @@ const Contact = () => {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-5 py-4 border-2 border-gray-200 rounded-2xl focus:ring-2 focus:ring-purple-500 focus:border-purple-300 transition-all duration-300 bg-white/50 backdrop-blur-sm shadow-sm hover:shadow-md focus:shadow-lg"
+                      className="w-full px-4 py-3 md:px-5 md:py-4 border-2 border-gray-200 rounded-2xl focus:ring-2 focus:ring-purple-500 focus:border-purple-300 transition-all duration-300 bg-white/50 backdrop-blur-sm shadow-sm hover:shadow-md focus:shadow-lg text-sm md:text-base"
                       placeholder="john@example.com"
                       required
                     />
                   </div>
                   
                   <div className="group">
-                    <label className="block text-sm font-semibold text-gray-800 mb-3">
+                    <label className="block text-sm font-semibold text-gray-800 mb-2 md:mb-3">
                       Service Interest
                     </label>
                     <select 
                       name="service"
                       value={formData.service}
                       onChange={handleChange}
-                      className="w-full px-5 py-4 border-2 border-gray-200 rounded-2xl focus:ring-2 focus:ring-purple-500 focus:border-purple-300 transition-all duration-300 bg-white/50 backdrop-blur-sm shadow-sm hover:shadow-md focus:shadow-lg"
+                      className="w-full px-4 py-3 md:px-5 md:py-4 border-2 border-gray-200 rounded-2xl focus:ring-2 focus:ring-purple-500 focus:border-purple-300 transition-all duration-300 bg-white/50 backdrop-blur-sm shadow-sm hover:shadow-md focus:shadow-lg text-sm md:text-base"
                       required
                     >
                       <option value="">Select a service</option>
@@ -268,15 +268,15 @@ const Contact = () => {
                   </div>
                   
                   <div className="group">
-                    <label className="block text-sm font-semibold text-gray-800 mb-3">
+                    <label className="block text-sm font-semibold text-gray-800 mb-2 md:mb-3">
                       Your Message
                     </label>
                     <textarea
                       name="message"
                       value={formData.message}
                       onChange={handleChange}
-                      rows={5}
-                      className="w-full px-5 py-4 border-2 border-gray-200 rounded-2xl focus:ring-2 focus:ring-purple-500 focus:border-purple-300 transition-all duration-300 resize-none bg-white/50 backdrop-blur-sm shadow-sm hover:shadow-md focus:shadow-lg"
+                      rows={4}
+                      className="w-full px-4 py-3 md:px-5 md:py-4 border-2 border-gray-200 rounded-2xl focus:ring-2 focus:ring-purple-500 focus:border-purple-300 transition-all duration-300 resize-none bg-white/50 backdrop-blur-sm shadow-sm hover:shadow-md focus:shadow-lg text-sm md:text-base"
                       placeholder="Tell us about your project requirements and goals..."
                       required
                     ></textarea>
@@ -285,17 +285,17 @@ const Contact = () => {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white py-5 px-8 rounded-2xl font-semibold hover:from-purple-700 hover:to-blue-700 transition-all duration-300 transform hover:-translate-y-1 shadow-2xl hover:shadow-3xl disabled:opacity-50 disabled:transform-none disabled:hover:shadow-2xl group flex items-center justify-center space-x-3 text-lg"
+                    className="w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white py-4 md:py-5 px-6 md:px-8 rounded-2xl font-semibold hover:from-purple-700 hover:to-blue-700 transition-all duration-300 transform hover:-translate-y-1 shadow-2xl hover:shadow-3xl disabled:opacity-50 disabled:transform-none disabled:hover:shadow-2xl group flex items-center justify-center space-x-2 md:space-x-3 text-sm md:text-base"
                   >
                     {isSubmitting ? (
                       <>
-                        <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
+                        <div className="w-4 h-4 md:w-5 md:h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
                         <span>Sending...</span>
                       </>
                     ) : (
                       <>
                         <span>Send Message</span>
-                        <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+                        <Send className="w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1 transition-transform duration-300" />
                       </>
                     )}
                   </button>

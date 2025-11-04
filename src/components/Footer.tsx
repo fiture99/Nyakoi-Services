@@ -48,7 +48,7 @@ const Footer = () => {
               <a href="#" className="text-gray-400 hover:text-purple-400 transition-all duration-300 transform hover:scale-110 p-2 rounded-lg hover:bg-white/10">
                 <Globe className="h-6 w-6" />
               </a>
-              <a href="mailto:info@nyakoiservices.com" className="text-gray-400 hover:text-purple-400 transition-all duration-300 transform hover:scale-110 p-2 rounded-lg hover:bg-white/10">
+              <a href="mailto:laminjawnehlj45@gmail.com" className="text-gray-400 hover:text-purple-400 transition-all duration-300 transform hover:scale-110 p-2 rounded-lg hover:bg-white/10">
                 <Mail className="h-6 w-6" />
               </a>
               <a href="tel:+2203167095" className="text-gray-400 hover:text-purple-400 transition-all duration-300 transform hover:scale-110 p-2 rounded-lg hover:bg-white/10">
@@ -97,16 +97,16 @@ const Footer = () => {
               <li className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors duration-300 group">
                 <Mail className="h-5 w-5 group-hover:text-purple-400 transition-colors duration-300" />
                 <a href="mailto:info@nyakoiservices.com" className="font-medium hover:text-purple-400 transition-colors duration-300">
-                  info@nyakoiservices.com
+                  laminjawnehlj45@gmail.com
                 </a>
               </li>
               <li className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors duration-300 group">
                 <MapPin className="h-5 w-5 group-hover:text-purple-400 transition-colors duration-300" />
-                <span className="font-medium">Westfield, Serrekunda</span>
+                <span className="font-medium">Kunkujang</span>
               </li>
               <li className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors duration-300 group">
                 <Globe className="h-5 w-5 group-hover:text-purple-400 transition-colors duration-300" />
-                <span className="font-medium">nyakoiservices.com</span>
+                <span className="font-medium">nyakoi-services.onrender.com/</span>
               </li>
             </ul>
           </div>
