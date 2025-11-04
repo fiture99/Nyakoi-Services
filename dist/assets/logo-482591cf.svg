@@ -1,0 +1,26 @@
+<svg width="220" height="80" viewBox="0 0 220 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="monoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899"></stop>
+      <stop offset="100%" stop-color="#8b5cf6"></stop>
+    </linearGradient>
+    <clipPath id="textClip">
+      <rect x="20" y="15" width="50" height="50" rx="10"></rect>
+    </clipPath>
+  </defs>
+  
+  <!-- Modern N Monogram -->
+  <g clip-path="url(#textClip)">
+    <rect x="20" y="15" width="50" height="50" fill="url(#monoGrad)"></rect>
+    <path d="M27 20 L47 60 M47 20 L67 60" stroke="white" stroke-width="4" stroke-linecap="round"></path>
+    <path d="M27 20 L67 60" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.7"></path>
+    
+    <!-- Digital Accent (pixels) -->
+    <rect x="62" y="18" width="2.5" height="2.5" fill="#ffffff" opacity="0.8"></rect>
+    <rect x="64" y="22" width="2.5" height="2.5" fill="#ffffff" opacity="0.6"></rect>
+  </g>
+  
+  <!-- Elegant Typography -->
+  <text x="85" y="42" font-family="'Playfair Display', serif" font-size="28" font-weight="700" fill="#1f2937">NYAKOI</text>
+  <text x="85" y="65" font-family="'Inter', sans-serif" font-size="14" font-weight="500" letter-spacing="2" fill="#6b7280">SERVICES</text>
+</svg>
